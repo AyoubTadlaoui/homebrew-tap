@@ -5,21 +5,21 @@
 class Logx < Formula
   desc "Pretty-print JSON slog logs from stdin, files, or follow mode"
   homepage "https://github.com/AyoubTadlaoui/GoLogX"
-  version "0.1.5"
+  version "0.1.6"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/AyoubTadlaoui/GoLogX/releases/download/v0.1.5/GoLogX_0.1.5_darwin_x86_64.tar.gz"
-      sha256 "65d6c9a867b694ef1fb77d0c2c0d3eb53814b68b9c1929d28803419c2854f028"
+      url "https://github.com/AyoubTadlaoui/GoLogX/releases/download/v0.1.6/GoLogX_0.1.6_darwin_x86_64.tar.gz"
+      sha256 "e84a24c61b44bcf927c3c865e8ea7fdedf202e720f888758723da57ecfe77414"
 
       define_method(:install) do
         bin.install "logx"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/AyoubTadlaoui/GoLogX/releases/download/v0.1.5/GoLogX_0.1.5_darwin_arm64.tar.gz"
-      sha256 "3d17de95520fe0a0f57e858d5b12ea1f216e9cbe78d90977737523d2c194255e"
+      url "https://github.com/AyoubTadlaoui/GoLogX/releases/download/v0.1.6/GoLogX_0.1.6_darwin_arm64.tar.gz"
+      sha256 "70684427d1fc274174abee5c4d0258a64cc6d9acfb3654abf62e6c359f96b814"
 
       define_method(:install) do
         bin.install "logx"
@@ -29,15 +29,15 @@ class Logx < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/AyoubTadlaoui/GoLogX/releases/download/v0.1.5/GoLogX_0.1.5_linux_x86_64.tar.gz"
-      sha256 "4c465a825dac36643d9aa5defe1b0cd7fffc3ba3259c1a35ae03aecac5efbb93"
+      url "https://github.com/AyoubTadlaoui/GoLogX/releases/download/v0.1.6/GoLogX_0.1.6_linux_x86_64.tar.gz"
+      sha256 "34737af4111c140380d715355691906ec5fbf68a5ddc56f4057a1948198270f3"
       define_method(:install) do
         bin.install "logx"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/AyoubTadlaoui/GoLogX/releases/download/v0.1.5/GoLogX_0.1.5_linux_arm64.tar.gz"
-      sha256 "d55d97195666c6766545bc208e061a21b06e61653592bc84f19ac707edd83b4d"
+      url "https://github.com/AyoubTadlaoui/GoLogX/releases/download/v0.1.6/GoLogX_0.1.6_linux_arm64.tar.gz"
+      sha256 "723430fdcc483197de3123d959b9a8c446a81e51e583d454d02156eb055cdea6"
       define_method(:install) do
         bin.install "logx"
       end
